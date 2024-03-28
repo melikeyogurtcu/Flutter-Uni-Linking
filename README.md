@@ -24,7 +24,7 @@ Derin bağlantıları test etmek için, simülatörünüzdeki tarayıcıda aşa�
 
 Ya da terminalde aşağıdaki kodları kullanın.
 
-    ```bash
+     ```bash
     xcrun simctl openurl booted "myapp://"  //homepage için
 
     xcrun simctl openurl booted "greenpage://"  //greenpage için
