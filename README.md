@@ -17,18 +17,33 @@ Bu Flutter uygulaması, "uni_links" paketini kullanarak derin bağlantıları (d
 
 Bu uygulama, belirli URL'leri dinleyerek derin bağlantıları işler. Uygulamanın başlangıç noktası olan MyHomePage widget'ı, derin bağlantıları dinlemek için uni_links paketini kullanır. Ana sayfada belirli URL'ler tespit edildiğinde, ilgili sayfalara yönlendirme yapar.
 
+1. **iOS için**
+
 Derin bağlantıları test etmek için, simülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
 
 - Pembe Sayfa: myapp://pinkpage
 - Yeşil Sayfa: myapp://greenpage
+
 
 Ya da terminalde aşağıdaki kodları kullanın.
 
 - xcrun simctl openurl booted "myapp://"  //homepage için
 - xcrun simctl openurl booted "greenpage://"  //greenpage için
 - xcrun simctl openurl booted "pinkpage://"  //pinkpage için
-   
 
+2. **Android için**
+
+Emülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
+
+- Pembe Sayfa: http://www.example.com/pinkpage
+- Yeşil Sayfa: http://www.example.com/greenpage
+
+
+Ya da terminalde aşağıdaki kodları kullanın.
+
+- adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp //greenpage için
+- adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp  //pinkpage için
+  
 
 
 
