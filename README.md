@@ -29,7 +29,7 @@ Ya da terminalde aşağıdaki kodları kullanın.
 
 - Ana Sayfa: xcrun simctl openurl booted "myapp://"  
 - Yeşil Sayfa: xcrun simctl openurl booted "greenpage://"  
-- Pembe Sayfa: xcrun simctl openurl booted "pinkpage://"  //pinkpage için
+- Pembe Sayfa: xcrun simctl openurl booted "pinkpage://"  
 
 2. **Android için**
 
@@ -42,7 +42,7 @@ Emülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
 Ya da terminalde aşağıdaki kodları kullanın.
 
 - Yeşil Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp 
-- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp  
+- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp 
   
 
 
