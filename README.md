@@ -24,12 +24,11 @@ Derin bağlantıları test etmek için, simülatörünüzdeki tarayıcıda aşa�
 
 Ya da terminalde aşağıdaki kodları kullanın.
 
-     ```bash
-    xcrun simctl openurl booted "myapp://"  //homepage için
+- xcrun simctl openurl booted "myapp://"  //homepage için
 
-    xcrun simctl openurl booted "greenpage://"  //greenpage için
+- xcrun simctl openurl booted "greenpage://"  //greenpage için
 
-    xcrun simctl openurl booted "pinkpage://"  //pinkpage için 
+- xcrun simctl openurl booted "pinkpage://"  //pinkpage için 
 
 
 
