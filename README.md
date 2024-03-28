@@ -26,10 +26,8 @@ Ya da terminalde aşağıdaki kodları kullanın.
 ```bash
    xcrun simctl openurl booted "myapp://"  //homepage için
 
-```bash
    xcrun simctl openurl booted "greenpage://"  //greenpage için
 
-```bash
    xcrun simctl openurl booted "pinkpage://"  //pinkpage için 
 
 
