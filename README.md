@@ -27,9 +27,9 @@ Derin bağlantıları test etmek için, simülatörünüzdeki tarayıcıda aşa�
 
 Ya da terminalde aşağıdaki kodları kullanın.
 
-- xcrun simctl openurl booted "myapp://"  //homepage için
-- xcrun simctl openurl booted "greenpage://"  //greenpage için
-- xcrun simctl openurl booted "pinkpage://"  //pinkpage için
+- Ana Sayfa: xcrun simctl openurl booted "myapp://"  
+- Yeşil Sayfa: xcrun simctl openurl booted "greenpage://"  
+- Pembe Sayfa: xcrun simctl openurl booted "pinkpage://"  //pinkpage için
 
 2. **Android için**
 
@@ -41,8 +41,8 @@ Emülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
 
 Ya da terminalde aşağıdaki kodları kullanın.
 
-- adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp //greenpage için
-- adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp  //pinkpage için
+- Yeşil Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp 
+- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp  
   
 
 
