@@ -1,16 +1,36 @@
 # uni_link_example
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Bu Flutter uygulaması, "uni_links" paketini kullanarak derin bağlantıları (deep links) dinleyerek belirli sayfalara doğrudan erişim sağlar. Anasayfada iki farklı sayfaya yönlendirme yapabilen basit bir örnektir.
+## Başlangıç
 
-A few resources to get you started if this is your first Flutter project:
+1. **Kurulum**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   Projeyi klonlayın ve gerekli paketleri yükleyin:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   git clone <proje-repo-url
+   
+2. **Gerekli paketleri yükleyin:**
+
+    
+
+    ```bash
+   flutter pub get
+
+
+
+## Derin Bağlantıları Test Etme
+
+Bu uygulama, belirli URL'leri dinleyerek derin bağlantıları işler. Uygulamanın başlangıç noktası olan MyHomePage widget'ı, derin bağlantıları dinlemek için uni_links paketini kullanır. Ana sayfada belirli URL'ler tespit edildiğinde, ilgili sayfalara yönlendirme yapar.
+
+Derin bağlantıları test etmek için, aşağıdaki URL'leri kullanabilirsiniz:
+
+-Pembe Sayfa: myapp://pinkpage
+-Yeşil Sayfa: myapp://greenpage
+
+## Notlar
+
+-Derin bağlantıları iOS ve Android için ayrı ayrı yapılandırmanız gerekebilir. Bunun için ilgili platformlara göre Info.plist ve AndroidManifest.xml dosyalarınızı güncellemelisiniz.
+-Derin bağlantıları dinleyen kodlarınızı uygulamanızın gereksinimlerine uygun şekilde özelleştirebilirsiniz.
