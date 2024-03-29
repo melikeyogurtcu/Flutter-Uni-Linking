@@ -1,16 +1,55 @@
 # uni_link_example
 
-A new Flutter project.
+Bu Flutter uygulaması, "uni_links" paketini kullanarak derin bağlantıları (deep links) dinleyerek belirli sayfalara doğrudan erişim sağlar. Anasayfada iki farklı sayfaya yönlendirme yapabilen basit bir örnektir.
+## Başlangıç
 
-## Getting Started
+1. **Kurulum**
+   
+   Projeyi klonlayın ve gerekli paketleri yükleyin:
+   ```bash
+   git clone https://github.com/melikeyogurtcu/Flutter-Uni-Linking.git   
+2. **Gerekli paketleri yükleyin:**
 
-This project is a starting point for a Flutter application.
+    ```bash
+   flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+## Derin Bağlantıları Test Etme
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Bu uygulama, belirli URL'leri dinleyerek derin bağlantıları işler. Uygulamanın başlangıç noktası olan MyHomePage widget'ı, derin bağlantıları dinlemek için uni_links paketini kullanır. Ana sayfada belirli URL'ler tespit edildiğinde, ilgili sayfalara yönlendirme yapar.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **iOS için**
+
+Derin bağlantıları test etmek için, simülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
+
+- Pembe Sayfa: myapp://pinkpage
+- Yeşil Sayfa: myapp://greenpage
+
+
+Ya da terminalde aşağıdaki kodları kullanın.
+
+- Ana Sayfa: xcrun simctl openurl booted "myapp://"  
+- Yeşil Sayfa: xcrun simctl openurl booted "greenpage://"  
+- Pembe Sayfa: xcrun simctl openurl booted "pinkpage://"  
+
+2. **Android için**
+
+Emülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
+
+- Pembe Sayfa: http://www.example.com/pinkpage
+- Yeşil Sayfa: http://www.example.com/greenpage
+
+
+Ya da terminalde aşağıdaki kodları kullanın.
+
+- Yeşil Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp 
+- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp
+
+## Görseller
+  
+
+
+
+## Notlar
+
+- Derin bağlantıları iOS ve Android için ayrı ayrı yapılandırmanız gerekebilir. Bunun için ilgili platformlara göre Info.plist ve AndroidManifest.xml dosyalarınızı güncellemelisiniz.
+- Derin bağlantıları dinleyen kodlarınızı uygulamanızın gereksinimlerine uygun şekilde özelleştirebilirsiniz.
