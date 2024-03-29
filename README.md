@@ -45,7 +45,10 @@ Ya da terminalde aşağıdaki kodları kullanın.
 - Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp
 
 ## Görseller
-  
+
+| ![homepage](images/homepage.png) | ![browser](images/browser.png) |
+|----------------------------------|---------------------------------|
+| ![direct](images/direct.png)     | ![greenpage](images/greenpage.png) |
 
 
 
