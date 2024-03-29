@@ -42,7 +42,9 @@ Emülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
 Ya da terminalde aşağıdaki kodları kullanın.
 
 - Yeşil Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp 
-- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp 
+- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp
+
+## Görseller
   
 
 
