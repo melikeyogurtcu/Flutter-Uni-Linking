@@ -35,14 +35,15 @@ Ya da terminalde aşağıdaki kodları kullanın.
 
 Emülatörünüzdeki tarayıcıda aşağıdaki URL'leri yazıp enter'a basın:
 
-- Pembe Sayfa: http://www.example.com/pinkpage
-- Yeşil Sayfa: http://www.example.com/greenpage
+- Pembe Sayfa: pinkpage://
+- Yeşil Sayfa: greenpage://
 
 
 Ya da terminalde aşağıdaki kodları kullanın.
 
-- Yeşil Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/greenpage" com.example.myapp 
-- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "http://www.example.com/pinkpage" com.example.myapp
+- Yeşil Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "greenpage://" com.example.uni_link_example
+
+- Pembe Sayfa: adb shell am start -W -a android.intent.action.VIEW -d "pinkpage://" com.example.uni_link_example
 
 ## Görseller
 
